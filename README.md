@@ -1,43 +1,52 @@
-# Mintlify Starter Kit
+# Aseed Docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+Official public documentation for [Aseed](https://aseed.ai), an AI-powered platform for qualitative customer and user research.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+Aseed supports the research workflow from project setup and interview collection to transcription, structured analysis, project-level synthesis, sharing, and API access.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
+- **Documentation:** https://docs.aseed.ai
+- **Aseed app:** https://app.aseed.ai
+- **Website:** https://aseed.ai
 
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
+## Documentation scope
 
-## Development
+This repository contains documentation for:
 
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+- getting started with Aseed
+- projects and AI Interviewer
+- interview uploads, transcripts, and transcription
+- Single Reports and report types
+- Project Reports and cross-interview synthesis
+- sharing, exports, and MCP access
+- account and billing
+- API reference
+- changelog
 
+The documentation site is built with [Mintlify](https://mintlify.com).
+
+## Local development
+
+Install dependencies and start the local documentation server:
+
+```bash
+npm install
+npm run dev
 ```
-npm i -g mint
+
+Validate the documentation before publishing:
+
+```bash
+npm run validate
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+The main Mintlify configuration is in `docs.json`.
 
-```
-mint dev
-```
+## Contributing
 
-View your local preview at `http://localhost:3000`.
+Keep documentation aligned with the current behavior of Aseed. Describe shipped functionality and product constraints explicitly, and avoid documenting planned features as if they are already available.
 
-## Publishing changes
+Changes merged into `main` are published through the connected Mintlify deployment.
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+## License
 
-## Need help?
-
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+This repository is licensed under the [MIT License](./LICENSE).
